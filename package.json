@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
+  "type": "commonjs",
   "type": "commonjs", 
-  "homepage": ".",
+  "homepage": "https://lesanimaux.vercel.app",
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
@@ -24,6 +25,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "sharp": "^0.33.5",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
