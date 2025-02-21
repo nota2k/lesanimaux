@@ -4,6 +4,8 @@
   "private": true,
   "description": "A Strapi application",
   "type": "commonjs",
+  "type": "commonjs", 
+  "homepage": "https://lesanimaux.vercel.app",
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
