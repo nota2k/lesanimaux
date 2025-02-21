@@ -4,6 +4,7 @@
   "private": true,
   "description": "A Strapi application",
   "type": "commonjs", 
+  "homepage": ".",
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
