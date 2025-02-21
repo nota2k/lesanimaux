@@ -12,11 +12,13 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
     "@strapi/plugin-cloud": "5.10.2",
     "@strapi/plugin-users-permissions": "5.10.2",
     "@strapi/strapi": "5.10.2",
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
+    "type": "module", 
     "mime-types": "^2.1.27",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animaux",
+  "info": {
+    "singularName": "animal",
+    "pluralName": "animaux",
+    "displayName": "Animal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Espece": {
+      "type": "string"
+    },
+    "Age": {
+      "type": "date"
+    },
+    "Photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
