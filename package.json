@@ -3,14 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
-<<<<<<< Updated upstream
-  "type": "commonjs",
-  "type": "commonjs", 
-  "homepage": "https://lesanimaux.vercel.app",
-=======
-  "type": "module", 
+  "type": "module",
   "homepage": ".",
->>>>>>> Stashed changes
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
