@@ -1,0 +1,42 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node.js & TypeScript",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	"portsAttributes": {
+		"1337": {
+			"label": "Strapi Admin",
+			"onAutoForward": "notify"
+		}
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "npm install && npm run build && npm run develop",
+
+	"containerEnv": {
+		"ADMIN_JWT_SECRET":    "wT7kdWBdVIokqLmHvLYhbA==",
+		"ADMIN_PATH":          "/",
+		"API_TOKEN_SALT":      "W1q0Jz3DUuDm7mX8T5ihOg==",
+		"APP_KEYS":            "mCmgX43cD20A1/rJ9jMexA==,sDrWLWEtSYEC8GY7MDxJCA==,3kahpiSwGZZ9/8vXxBH4Rw==,F7SMmyDOfmHvbe8u/7yc/g==",
+		"DATABASE_CLIENT":     "sqlite",
+		"DATABASE_FILENAME":   "./var/devcontainer.db",
+		"DATABASE_SSL":        "false",
+		"HOST":       		   "0.0.0.0",
+		"JWT_SECRET":          "tslX9nbrd7XzCWgUI3bUqA==",
+		"NODE_ENV":   		   "development",
+		"PORT":      	       "1337",
+		"TRANSFER_TOKEN_SALT": "AjPU2EIIBfaTB5QKFCMTCg==",
+	}
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
